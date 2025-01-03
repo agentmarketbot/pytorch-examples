@@ -13,7 +13,7 @@ a computational graph in the background, allowing us to easily backpropagate
 through the graph to compute gradients of some downstream (scalar) loss with
 respect to a Tensor. Concretely if x is a Tensor with x.requires_grad == True
 then after backpropagation x.grad will be another Tensor holding the gradient
-of x with respect to some scalar value.
+of scalar (usually loss) with respect to x.
 """
 
 device = torch.device('cpu')
